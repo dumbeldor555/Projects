@@ -1,0 +1,12 @@
+appearence 
+
+1 make animeted hamburgur manu 
+2 in the center make a butoon 
+
+functionallity
+
+1# on click of the animeted box slide navigation menu from the left 
+2# on click of the center button display a div that says content with close button
+
+
+did not use icons because of lack of internet connection but everything is working good

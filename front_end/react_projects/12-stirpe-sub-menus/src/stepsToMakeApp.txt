@@ -1,0 +1,11 @@
+appearance 
+
+1# make whole container
+2# make header component
+3# make navbar component (make logo navlink and signin btn in it)
+4# make start now btn 
+
+functionallity
+
+on link hover display their respective component and inside that component display 
+links that does not go anywhere

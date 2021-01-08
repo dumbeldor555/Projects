@@ -1,0 +1,86 @@
+/* align icon left */
+
+#what .items {
+  flex-direction: column;
+}
+
+#what .items .item {
+  display: flex;
+  text-align: left;
+}
+
+/* position item */
+
+ #what .items .item i {
+  margin-right: 1.3rem;
+  align-self: center;
+  margin-bottom: 0;
+} 
+
+/* smart phone */
+
+@media (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+  
+  }
+
+  #showCase .showCase-content {
+  top: 110px;
+ 
+  }
+ 
+  #navbar .logo {
+    margin-bottom: .5rem;
+    text-align: center;
+  }
+
+  #navbar ul {
+    padding: .5rem;
+  }
+
+  #who {
+    display: block;
+  }
+
+  #who .who-img{
+    display: none;
+  }
+  
+  
+  #clients .items img {
+  width: 80%;
+  }
+
+  #clients .items div:last-child {
+     display: none;
+  }
+
+  #contact {
+    flex-direction: column;
+    /* display: block; */
+  }
+
+  #contact .map {
+    height: 200px;
+    border-top: 4px solid #333;
+  }
+
+
+}
+ 
+@media(max-height:560px) {
+ .l-heading {
+   font-size: 2rem;
+ }
+
+ .showCase-content {
+   margin-top: -2rem;
+   top: 140px;
+ }
+
+ .lead {
+   font-size: .7rem ;
+ }
+}

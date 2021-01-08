@@ -1,0 +1,171 @@
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: #49a6e9;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-off-white:#f8f8ff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-secondary: hsla(182, 63%, 54%);
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+
+
+
+body {
+
+  font-family: var(--ff-primary);
+}
+
+.title {
+
+  color: var(--clr-primary-2);
+  font-size: 4rem;
+  text-align: center;
+  padding: 2rem ;
+}
+
+.heading {
+
+  color: var(--clr-primary-2);
+  display: block;
+  font-size: 1.4rem;
+  text-align: center;
+  letter-spacing: .3rem;
+  margin-bottom: 1rem;
+}
+
+.container {
+
+  margin: 2rem;
+  border: 1px solid black;
+  font-size: 1.3rem; 
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  height: 10rem;
+}
+
+.currentIndex {
+
+  font-size:1.2rem;
+  color:red;
+  position: relative;
+  bottom: 2rem;
+}
+
+.currentNumberContainer {
+
+  font-size: 3rem;
+  color: var(--clr-primary-1);
+}
+
+/* buttons */
+
+
+.controller {
+
+  display: flex;
+  justify-content: center;
+}
+.increment {
+
+  border-radius: 5px;
+  background: var(--clr-green-dark);
+  border: none;
+  padding: .4rem 1.2rem;
+  color: var(--clr-white);
+  letter-spacing: .2rem;
+  font-size: 1.1rem;
+  margin: 2rem;
+  transition: all .3s linear;
+}
+
+
+.decrement {
+
+  border-radius: 5px;
+  background: var(--clr-red-dark);
+  border: none;
+  padding: .4rem 1.2rem;
+  color: var(--clr-white);
+  letter-spacing: .2rem;
+  font-size: 1.1rem;
+  margin: 2rem;
+}
+
+.increment:hover, .decrement:hover {
+  cursor: pointer;
+}
+
+.increment:hover {
+  background: var(--clr-green-light);
+}
+
+.decrement:hover {
+  background: var(--clr-red-light);
+}
+
+
+.indexOfSequence {
+  display: block;
+  margin: auto;
+  padding: .4rem;
+  border: solid black 1px;
+  border-radius: 5px;
+}
+
+.typedInput {
+
+  background: var(--clr-primary-2);
+  border-radius: 5px;
+  border: none;
+  font-size: .8rem;
+  letter-spacing: .3rem;
+  padding: .3rem .8rem;
+  margin: auto;
+  margin-top: 1rem;
+  color: var(--clr-white);
+  display: block;
+  transition: all .3s linear;
+}
+
+.typedInput:hover {
+
+  background: var(--clr-primary-4);
+  cursor: pointer;
+  color: var(--clr-grey-1);
+}

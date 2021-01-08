@@ -1,0 +1,10 @@
+apearance 
+
+#1 make a container and shove everything inside it center it 
+#2 divide that container in two halves and give the heading to the left halve 
+#3 and in the 3rd halv display the questions 
+
+funcationallity
+
+#1 give evry question + icon and on click flip that + icon into - icon 
+  and display the answer

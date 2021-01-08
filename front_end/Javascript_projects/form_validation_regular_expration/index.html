@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form validation</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mx-auto">
+        <h1>User Form</h1>
+        <form action="">
+          <div class="form-group">
+            <label for="Name">Name</label>
+            <input type="text" class="form-control" placeholder="Name" id="Name">
+            <div class="invalid-feedback">
+              Name must be between 2 and 10 characters
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="Zipcode">ZipCode</label>
+            <input type="text" class="form-control" placeholder="ZipCode" id="ZipCode">
+            <div class="invalid-feedback">
+              Enter a valid zip
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="text" class="form-control" placeholder="Email" id="Email">
+            <div class="invalid-feedback">
+             Enter a valid Email address
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="PhoneNumber">Phone</label>
+            <input type="text" class="form-control" placeholder="Phone" id="Phone">
+            <div class="invalid-feedback">
+             Enter a valid phone number
+            </div>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+for the second project
+
+appearence //////////////////////////////////////////*****************************
+1# make a container 
+
+2#make a heading
+
+3#make individual component that containes info about individual tour
+////////////////////////////////////////////////////***********************************
+
+functionallity/////////////////////////////////////////*****************************
+1#make removeItem button for every individual tour component
+
+2#add readMore button to individual tour component
+
+3#if all the individual tour gets remove then display reload all tour button which reloads 
+all the individual tours without reloading browserpage
+/////////////////////////////////////////*****************************

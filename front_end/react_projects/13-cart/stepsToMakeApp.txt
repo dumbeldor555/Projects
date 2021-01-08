@@ -1,0 +1,23 @@
+appearance 
+
+1# make navBar 
+2# in navBar make heading on the left side and bag icon on the right hand side 
+3#  after navBar make your 'bag heading'  
+4# make item container 
+5# make individual item 
+6# make total component
+7# make clear all Btn
+
+functionallity
+
+1# in every individual cart item add incrememnt and decrememn functionalitty via buttons
+2# on the left hadn side of the nav bar at top of the bag icon display total cart items number
+3# make clear button clear all the cart items from cart
+
+
+pending :
+bring some icons
+ 
+and for some weird reason React.strictMode is calling incrememnt function twice 
+so the item is incrementing bu 2 then 1 your code is fine it's just something to do with 
+react find the solution on stackoverflow

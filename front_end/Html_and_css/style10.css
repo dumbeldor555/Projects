@@ -1,0 +1,216 @@
+:root {
+  --green: #13390F;
+  --light-green:RGBA(59,122,87,.9);
+  --dark-white:RGBA(255,255,255,.6)
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poiret One', cursive;
+}
+
+/* utility classes */
+  .l-heading {
+    font-size: 2rem;
+    color: var(--dark-white) ;
+  }
+  
+  .btn {
+    background-color: transparent;
+    padding: 1rem;
+    border: solid #fff 1px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: .2rem;
+    transition: color .1s ease-in;
+  }
+
+  .btn:hover {
+    background-color: #fff;
+    color: var(--light-green);
+  }
+
+
+
+/* utility classes */
+
+/* SECTION1 */
+
+#section1 {
+  height: 75vh;
+  background: var(--green);
+}
+#section1 .bisector {
+  padding: 2rem;
+  color: #fff;
+  margin-top: -3rem;
+  display: flex;
+  justify-content: center;
+}
+
+#section1 .bisector header {
+  width: 100%;
+  flex: 1;
+}
+
+#section1 .bisector .date {
+  width: 100%;
+  flex: 1;
+  margin-top: 1rem;
+}
+
+#section1 .bisector header a,
+#section1 .bisector .date nav ul a,
+#section3 .navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  transition: color .2s ease-in;
+}
+
+#section1 .bisector header a:hover,
+#section1 .bisector .date nav ul a:hover,
+#section3 .navbar ul li a:hover {
+ color: var(--dark-white);
+}
+
+#section1 .bisector header {
+  text-align: right;
+  padding-right: 10rem;
+  padding-top: 3rem;
+  letter-spacing: .5rem;
+  font-size: 2.4rem;
+  font-weight: lighter;
+  align-content: center;
+}
+
+#section1 .bisector .date h2 {
+  letter-spacing: .1rem;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  color: var(--dark-white);
+  margin-top: 3rem;
+  font-weight: lighter;
+  align-content: center;
+  margin-left: 6rem;
+}
+
+#section1 .bisector .date nav ul {
+ display: flex;
+ width: 70%;
+ justify-content: space-evenly;
+ list-style: none;
+}
+
+#section1 .bisector .date nav ul li {
+  width: 100%;
+  text-align: center;
+}
+
+#section1 .intro {
+  color: #fff;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+#section1 .intro p {
+  font-size: 1.4rem;
+}
+
+#section1 .intro a {
+  display: inline-block;
+}
+
+#section2 {
+  display: flex;
+  justify-content: center;
+  background: #fff;
+  height: 80vh;
+  padding: 0 7rem;
+  padding-bottom: 3rem;
+}
+
+#section2 .container {
+  padding: 2rem;
+  width: 30%;
+}
+
+#section2 .container h3 {
+  margin-top: 3rem;
+  color: var(--light-green);
+}
+
+#section2 .container .imgp {
+  margin-top: 2rem;
+  height: 200px;
+  width: 300px;
+  border-radius: 5px;
+}
+
+#section2 .container .speaker .img1 {
+  background: url('./images/product-school-ZLdKgqJeERM-unsplash.jpg') no-repeat
+  center center/cover;
+}
+
+#section2 .container .schedule .img2 {
+  background: url('./images/antenna-FDV1BaKNKEo-unsplash.jpg') no-repeat
+  center center/cover;
+}
+
+#section2 .container .venue .img3 {
+  background: url('./images/jonathan-j-castellon-8J0bTP3snCU-unsplash.jpg') no-repeat
+  center center/cover;
+}
+
+
+
+#section2 .container .text h3 {
+margin: 1rem 0;
+}
+
+#section2 .container h4 {
+  margin-top: 4rem;
+}
+
+/* section3 */
+
+#section3 {
+  display: flex;
+  height: 13vh;
+  background: var(--green);
+  align-items: center;
+}
+
+#section3 .copyRight,
+#section3 .navbar {
+  flex: 1;
+}
+
+#section3 .copyRight h4,
+#section3 .navbar ul {
+  text-align: center;
+}
+
+#section3 .copyRight h4 {
+  color: var(--dark-white);
+}
+
+#section3 .navbar ul {
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+}
+
+#section3 .navbar ul li {
+  width: 100%;
+  font-size: .9rem;
+  list-style: none;
+}
+

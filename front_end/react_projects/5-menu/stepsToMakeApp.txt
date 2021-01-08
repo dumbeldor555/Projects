@@ -1,0 +1,11 @@
+appearence
+
+make div container shove everything in it 
+make a heading component
+make navbar component
+make foodItem component
+make footItems component
+
+functionallity
+
+display the foodItem by the selected catagory in navBar

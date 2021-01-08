@@ -1,0 +1,13 @@
+appearence
+1# make a heading component that says reviews
+2 #make a image container where images are contains
+3#make two left and right button to scroll left or right 
+4#and make about container that displays person info
+5# and make quete icon and make it slide with the whole profile
+
+functionallity
+1# make tow buttons scroll left or right 
+2# after 3sec make the profile slide automatically
+
+pending 
+implement slide effect 

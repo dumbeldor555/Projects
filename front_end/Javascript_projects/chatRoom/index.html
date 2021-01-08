@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat room</title>
+  <style>
+    .send {
+      margin-left: 2rem;
+    }
+    .recive {
+      margin-left: 15rem;
+    }
+    .h5-sender {
+      margin-left: 1rem;
+      color:brown
+    }
+    .h5-reciver {
+      margin-left: 16rem;
+      color:brown;
+    }
+    #clearChat {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <h1>This is my chat room</h1>
+<div id="container">
+  <input type="text" class="sender" placeholder="who's the sender">
+  <input type="text" class="reciver" placeholder="who's the reciver">
+  <input type="text" class="msg" placeholder="write your message">
+  <button class="btn str-btn">send</button>
+  <div id="msgContent"></div>
+  <br>
+  <button id="clearChat"> clear chat</button>
+  <!-- <div class="displayMsg send"></div>
+  <div class="displayMsg recive"></div> -->
+</div>
+  <script src="app.js"></script>
+  <!-- <script src="app1.js"></script> -->
+</body>
+</html>

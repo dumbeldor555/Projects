@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* utility classes */
+
+hr {
+  font-weight: lighter;
+  margin:.9rem 0;
+}
+
+.horizontalLine {
+  align-content: left;
+  width: 75%;
+}
+
+.bluebtn {
+  background-color: #0E1A40;
+  padding: 1.2rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.bluebtn:hover {
+  background-color: #0073E5;
+}
+
+.redbtn {
+  background-color: #D11141;
+  padding: 1.2rem 1rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.redbtn:hover {
+  background-color: #FF0000;
+}
+
+.btn {
+  background-color: transparent;
+  padding: .1rem;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  transition: color .4s ease-in;
+}
+
+.btn:hover {
+  color: bisque;
+}
+
+body {
+  font-family: 'roboto' ,sans-serif;
+}
+
+/* main styling */
+
+#section1 {
+  position: sticky;
+  top: 0;
+}
+
+#section1 nav {
+  height: 8vh;
+  background: #333; 
+}
+
+#section1 nav ul li a {
+ color: #fff;
+ text-decoration: none;
+ font-size: 1.1rem;
+ transition: color .2s ease-in;
+}
+
+#section1 nav ul li a:hover {
+  color: bisque;
+}
+
+#section1 nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+#section1 nav ul {
+  padding: 1rem 0;
+}
+
+/* section2  */
+
+#section2 {
+  height: 90vh;
+  background: url('./images/sebastian-radu-S_NfCkEw28A-unsplash.jpg') no-repeat
+  center center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section2 h1,
+#section2 h2,
+#section2 p {
+color: #fff;
+margin: 2rem 0;
+text-align: center;
+}
+
+#section2 h1 {
+  font-size: 4rem;
+}
+
+#section2 h2 {
+  font-size: 2rem;
+}
+
+#section2 p {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+}
+
+/* section3  */
+
+#section3 {
+  height: 120vh;
+  background: #333;
+  color: #fff;
+  text-align: center;
+}
+
+#section3 h1 {
+  font-size: 2.4rem;
+  padding: 2rem 0;
+}
+
+#section3 h2 {
+  font-size: 1.4rem;
+  padding: 1rem 0;
+  line-height: 2rem;
+}
+
+#section3 div  {
+  margin-top: 1.6rem;
+  margin-bottom: 3rem;
+}
+
+#section3 p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+#section3 .img{
+height: 40%;
+background: url('./images') no-repeat  /*background image to be added*/
+center center/cover;
+}
+
+/* section4 */
+
+#section4 {
+  text-align: center;
+  height: 120vh;
+  background: #EEEEEE;
+  color: #333;
+}
+
+#section4 h1 {
+  padding-top: 4rem;
+  font-size: 2.2rem;
+  line-height: 3rem;
+}
+
+#section4 p {
+  padding-top: 2rem;
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+}
+
+#section4 div {
+  margin-top: 3rem;
+}
+
+#section4 .img {
+  background: url('')no-repeat  /*background image to be added*/
+  center center/cover;
+}
+
+/* section5  */
+
+#section5 {
+  height: 70vh;
+  background: url('./images/aperture-vintage-5UjBY00ToG0-unsplash.jpg') no-repeat
+  center center/cover;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+#section5 h2 {
+  font-size: 2.3rem;
+  margin-bottom: 2.1rem;
+}
+
+#section5 p {
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+}
+
+/* section6 */
+
+/* horizontal line */
+
+
+#section6 {
+  height: 50vh;
+  background: #EEEEEE;
+  display: flex;
+
+}
+
+#section6 .img,
+#section6 .text {
+  flex: 1;
+  width: 100%;
+}
+
+#section6 .img {
+  background: url(''); /* background image to be added*/
+
+}
+
+#section6 .text h1{
+  padding-top: 3.4rem;
+  font-size: 1.9rem;
+  padding-bottom: 1.6rem;
+}
+
+#section6 .text p {
+  line-height: 1.9rem;
+  font-size: 1.1rem ;
+}
+
+#section6 .text p a {
+  color: green;
+  text-decoration: none;
+}
+
+#section6 .text p a:hover {
+  color: lightseagreen;
+}
+
+/* section 7 */
+
+#section7 {
+  padding: 1rem 2rem;
+  height: 41vh;
+  display: flex;
+  background-color: #333;
+  color: #fff;
+  justify-content: center;
+}
+
+#section7 .boxs{
+padding: 2.3rem;
+}
+
+#section7 .boxs a{
+display: block;
+text-decoration: none;
+color: #fff;
+line-height: 1.6rem;
+}
+
+
+/* section8  */
+
+#section8 {
+  height: 7vh;
+  background-color: #444444;
+  display: flex;
+  color:#fff;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

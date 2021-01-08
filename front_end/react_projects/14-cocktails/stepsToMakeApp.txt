@@ -1,0 +1,24 @@
+appearance 
+
+1# make navBar 
+on the left of it make heading and on the right of it make 'home' and 'about' links
+
+2# make search bar contaier much like you made in your eCommerce app
+give the search bar heading of 'search for your favorite item'
+
+3# make cocktail header saying 'cocktail'
+
+4# make cocktail container and inside it make individual cocktail component 
+
+5# make about component and give it about text 
+
+functinality
+
+1# on the keypress in search bar sort through all the cocktail item and display them untill
+if the characters in the search matches
+
+2# onclick show details about that cocktail in the whole document and with it display the 
+'go home' button to go back to home and select diffrent cocktail
+
+and if the search string does not  match reaturn 'not found' component
+that's it..!!

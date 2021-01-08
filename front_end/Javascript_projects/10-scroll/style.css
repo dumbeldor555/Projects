@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/* veriables */
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: #49a6e9;
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-secondary: hsla(182, 63%, 54%);
+  --clr-black: #222;
+  --ff-primary: "Roboto", sans-serif;
+  --ff-secondary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/* body */
+html {
+  scroll-behavior: smooth;
+  scroll-padding: 5rem;
+}
+
+body {
+
+  font-family: var(--ff-primary);
+  color: var(--clr-white);
+}
+/* a tag */
+a {
+
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+/* divs */
+#container{
+
+background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)),
+url(../../freeCodeCamp__instructorCode/javascript-basic-projects/10-scroll/final/hero-bcg.jpeg)
+center/cover no-repeat;
+height: 100vh;
+width: 100%;
+display: flex;
+flex-direction: column;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+}
+.fixed {
+
+  position: fixed;
+  height: 5rem;
+  width: 100%;
+}
+
+#aboutContent, #serviceContent,#feturedTours {
+  background: var(--clr-white);
+  height: 80vh;
+  width: 100%;
+}
+
+/* heading */
+.heading {
+
+  margin: auto;
+  width: 60%;
+}
+.heading .head {
+
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  color: var(--clr-white);
+  font-size: 3rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+header {
+
+  color: var(--clr-black);
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: var(--spacing);
+  font-weight: 500;
+}
+
+span {
+
+  color: var(--clr-secondary);
+}
+
+.text {
+
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+
+/* imgs */
+.logo {
+  position: relative;
+  left: 6rem;
+  top: 1rem;
+  width: 60px;
+  height: 60px;
+}
+.logo:hover {
+
+  cursor: pointer;
+}
+
+/* uls */
+.navBar {
+
+  position: relative;
+  right: 10rem;
+  top: 1rem;
+}
+
+/* btns */
+.exploreTours {
+
+display: block;
+margin: auto;
+margin-top: 3rem;
+padding: .6rem 1rem;
+border-radius: 5px;
+color: var(--clr-white);
+background: transparent;
+font-size: 1.12rem;
+text-transform: uppercase;
+letter-spacing: var(--spacing);
+transition: all .3s linear;
+}
+
+.exploreTours:hover, .exploreTours a {
+
+  cursor: pointer;
+  color: var(--clr-primary-5);
+}
+
+.exploreTours:hover {
+
+  background: var(--clr-white);
+}
+
+
+
+.navigation .navBar li {
+
+  display: inline;
+  list-style: none;
+  font-size: 1.6rem;
+  margin-right: 1rem; 
+}
+
+.navigation .navBar li:hover {
+
+cursor: pointer;
+}
+
+footer {
+  height: 20vh;
+  color: var(--clr-white);
+  background: var(--clr-primary-1);
+}
+
+footer p {
+
+position: relative;
+top: 3rem;
+left: 30rem;
+}
+
+.fa-arrow-up {
+
+  position: relative;
+  top: .2rem;
+  left: .4rem;
+  font-size: 2rem;
+  display: none;
+}
+
+.BtnContainer {
+
+  position: fixed;
+  left: 95%;
+  top: 90%;
+  background: var(--clr-secondary);   
+  border-radius: 5px; 
+  animation:  bounce 2s ease-in-out infinite;
+}
+
+.BtnContainer:hover {
+
+  cursor: pointer;
+}
+
+@keyframes bounce {
+
+  0% {
+  transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.5);
+  }
+
+ 100% {
+    transform: scale(1);
+ }
+}
+

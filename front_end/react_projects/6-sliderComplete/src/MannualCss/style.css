@@ -1,0 +1,201 @@
+/*
+===============
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(21, 91%, 17%);
+  --clr-primary-2: hsl(21, 84%, 25%);
+  --clr-primary-3: hsl(21, 81%, 29%);
+  --clr-primary-4: hsl(21, 77%, 34%);
+  --clr-primary-5: hsl(21, 62%, 45%);
+  --clr-primary-6: hsl(21, 57%, 50%);
+  --clr-primary-7: hsl(21, 65%, 59%);
+  --clr-primary-8: hsl(21, 80%, 74%);
+  --clr-primary-9: hsl(21, 94%, 87%);
+  --clr-primary-10: hsl(21, 100%, 94%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+  --container-width: 70%;
+}
+/*
+===============
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+/* utalities */
+.inlineBlock {
+  display: inline-block;
+}
+
+/* whole container style */
+
+.container {
+  width: var(--container-width);
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+/* heading style */
+.headingCon {
+  width: 17%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.heading {
+  font-size: 2.3rem;
+  font-weight: 400;
+  width: 15%;
+  margin: auto;
+}
+
+/* profile styling */
+
+.ProfileContainer {
+  width: 90%;
+  margin: auto;
+  /* overflow: hidden; */
+  height: 500px;
+  border: 1px solid blue;
+}
+
+.SwipeL {
+  animation-name: swipeLeft;
+  animation-duration: 1s;
+}
+
+@keyframes swipeLeft {
+  from {
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+.ProfileContainer .curruntFrame .image,
+.ProfileContainer .left .image,
+.ProfileContainer .right .image {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+  border: 5px solid var(--clr-grey-8);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.personName {
+  width: 18%;
+  margin: auto;
+  margin-top: 1rem;
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  color: var(--clr-primary-4);
+}
+
+.job {
+  width: 12%;
+  margin: auto;
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-grey-4);
+}
+
+.about {
+  width: 95%;
+  margin: auto;
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  letter-spacing: var(--spacing);
+  line-height: 1.8rem;
+  text-align: center;
+}
+
+/* button style */
+.swipeBtn {
+  width: var(--container-width);
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 50%;
+}
+
+.swipeBtn .btnCon {
+  display: inline-block;
+  background: var(--clr-grey-4);
+  border-radius: 5px;
+  height: 40px;
+  width: 40px;
+  padding: 0.4rem;
+  transition: var(--transition);
+}
+
+.swipeBtn .btnCon:hover {
+  background: var(--clr-red-light);
+  cursor: pointer;
+}
+
+.swipeBtn .btnCon > * {
+  font-size: 1.7rem;
+  color: var(--clr-white);
+}
+/* icon styling */
+
+.pencilIcon,
+.quoteIcon {
+  position: relative;
+  top: 0.5rem;
+  font-size: 2.5rem;
+  color: var(--clr-red-light);
+}
+
+.quoteIcon {
+  display: block;
+  margin: auto;
+  margin-top: 2rem;
+}

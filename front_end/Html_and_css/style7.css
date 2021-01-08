@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto' ;
+}
+
+
+
+
+
+.box1 {
+ background-color: #F7F7F7;
+ height: 50vh;
+ text-align: center;
+ z-index: 1;
+}
+
+.box2 {
+  height: 50vh;
+  background: #333;
+  text-align: center;
+  z-index: 1;
+  color: #F7F7F7;
+ }
+
+.box1 h1,.box2 h1 {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+.box1 p,.box2 p{
+  text-align: center;
+  line-height: 1.9rem;
+  font-weight: 50;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+
+
+#section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: -1;
+  background: url('./images/stickyImg1.jpg') no-repeat 
+  center center/cover;
+  background-attachment: fixed;
+  opacity: .8;
+}
+
+#section2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  z-index: -1;
+  background: url('./images/stickyImg2.jpg') no-repeat 
+  center center/cover;
+  background-attachment: fixed;
+ opacity: .8;
+}
+
+#section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+  z-index: -1;
+  background: url('./images/stickyImg3.jpg') no-repeat 
+  center center/cover;
+  background-attachment: fixed;
+  opacity: .8;
+}
+
+#section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  z-index: -1;
+  background: url('./images/stickyImg1.jpg') no-repeat 
+  center center/cover;
+  background-attachment: fixed;
+  opacity: .8;
+}
+
+#section2 h1,#section3 h1 {
+  color: #fff;
+ }
+
+#section4 h1,#section1 h1 {
+  background: #333;
+  padding: 1.3rem 1rem;
+  color: #fff;
+  letter-spacing: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+#section1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('./images/stickyImg1.jpg') no-repeat 
+  center center/cover;
+  height: 100vh;
+  background-attachment: fixed;
+  z-index: -1;
+}
+
+#section2 {
+  height: 50vh;
+  color: #333;
+  background: #F7F7F7;
+  z-index: 1;
+}
+
+#section3 {
+  height: 50vh;
+  background: url('./images/stickyImg2.jpg') no-repeat 
+  center center/cover;
+  position: relative;
+}
+
+#section3 .box3 h1 {
+color: #fff;
+
+}
+
+#section1 .box1 h1 {
+  background: #333;
+  padding: 1.3rem 1rem;
+  color: #fff;
+  letter-spacing: 14px;
+}
+
+#section2 .box2 h1 {
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+}
+
+#section2 .box2 p {
+  text-align: center;
+  line-height: 1.9rem;
+  font-weight: 50;
+  font-size: 1.2rem;
+  padding-bottom: 2rem;
+}
+
+.box3 {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+} */

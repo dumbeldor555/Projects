@@ -1,0 +1,332 @@
+/*
+===============
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 620px;
+}
+/*
+===============
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--clr-grey-10);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+/* navBar styling */
+
+.navContainer {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background: var(--clr-grey-10);
+  box-shadow: var(--dark-shadow);
+}
+
+.links {
+  margin-right: 10rem;
+  margin-top: 1rem;
+}
+
+.links .linkList .individualLink {
+  display: inline-block;
+  margin: 1rem;
+  list-style: none;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  transition: color 0.3s ease-in;
+  color: var(--clr-black);
+}
+
+.links .linkList .individualLink:hover {
+  cursor: pointer;
+  color: var(--clr-primary-4);
+}
+
+.logoContainer {
+  margin-left: 10rem;
+  margin-top: 1rem;
+}
+
+/* searchBar styling */
+
+.SearchBar {
+  width: 40%;
+  height: 120px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: var(--dark-shadow);
+  margin: auto;
+  margin-top: 5rem;
+  background: var(--clr-white);
+}
+
+.SearchBar .searchBarHeading {
+  margin-left: 2rem;
+  padding-top: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: var(--spacing);
+  color: var(--clr-grey-5);
+  font-weight: 600;
+}
+
+.SearchBar .serchBarInput {
+  width: 90%;
+  height: 30px;
+  background: var(--clr-grey-10);
+  border: 0.5px solid var(--clr-black);
+  font-size: 1.2rem;
+  display: block;
+  margin: auto;
+  margin-top: 1rem;
+}
+
+.aboutHeading {
+  margin: 1rem 0rem;
+  font-size: 2rem;
+  text-transform: capitalize;
+  letter-spacing: 7px;
+}
+
+.about {
+  width: 50%;
+  letter-spacing: var(--spacing);
+  margin: auto;
+  margin-top: 9rem;
+  text-align: center;
+}
+
+.aboutText {
+  margin-top: 3rem;
+  font-size: 1.1rem;
+  letter-spacing: var(--spacing);
+  line-height: 35px;
+}
+
+/* cocktails styling  */
+
+.cocktailHeading {
+  width: 100px;
+  text-transform: uppercase;
+  letter-spacing: var(--spacing);
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.CocktailContaier {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  /* border: 1px solid red; */
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.individualCocktail {
+  width: 30%;
+  height: 500px;
+  margin: 1rem 0rem;
+  box-shadow: 4px 4px 10px black;
+  background: var(--clr-white);
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.individualCocktail:hover {
+  cursor: pointer;
+  box-shadow: 8px 8px 5px black;
+}
+
+.cocktailImg {
+  display: block;
+  width: 100%;
+  height: 65%;
+}
+
+.DrinkName {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: var(--spacing);
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.glassName {
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.alcoholic {
+  margin-left: 1rem;
+  color: var(--clr-grey-6);
+  font-size: 1rem;
+}
+
+.detailBtn,
+.GoBackHome {
+  display: block;
+  width: 100px;
+  height: 30px;
+  font-size: 0.8rem;
+  color: var(--clr-white);
+  padding: 0.2rem 0.3rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  background: var(--clr-grey-6);
+  border: none;
+  border-radius: 5px;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.detailBtn:hover,
+.GoBackHome:hover {
+  cursor: pointer;
+  background: var(--clr-grey-8);
+}
+
+.GoBackHome {
+  display: block;
+  width: 150px;
+  height: 35px;
+}
+
+.singleCocktailDetails {
+  /* border: 1px solid black; */
+  width: 50%;
+}
+
+.singleCocktailContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  /* border: 1px solid black; */
+  padding: 1rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+.singleCocktailContainer .singleCocktailImage {
+  width: 500px;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.individualDrinkName {
+  font-size: 2rem;
+  letter-spacing: 5px;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  margin-left: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.detailDec {
+  display: inline;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+  height: 20px;
+  background: var(--clr-grey-8);
+  border-radius: 5px;
+  /* border: 1px solid black; */
+  padding: 0.2rem 0.4rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--clr-grey-4);
+}
+
+.glassDetails > * {
+  margin-bottom: 0.4rem;
+  height: 40px;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.instructions .detailDec {
+  display: inline-block;
+  position: relative;
+  top: -1rem;
+}
+
+.wrapText {
+  display: inline-block;
+  width: 70%;
+}
+
+.notFound {
+  margin: auto;
+  margin-top: 3rem;
+  width: 490px;
+  text-transform: uppercase;
+}
+
+.loading {
+  margin: auto;
+  width: 700px;
+  height: 500px;
+  border: 1px solid black;
+  margin-top: 3rem;
+}
