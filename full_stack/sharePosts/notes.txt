@@ -1,0 +1,1 @@
+1. did not understand the funciton 'flash' in 'htdocs/app/helper/session_helper.php'.
